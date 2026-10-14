@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "generated_at": "2026-10-09T16:14:02.1517201Z",
+  "executable": "C:\\Works\\20261009_PICORA-1D\\ui\\src-tauri\\target\\release\\picora-1d.exe",
+  "executable_sha256": "2F2A483C6C9BBCE4D162257936ABF378AA19765B767ED174E0832C2AFEEA6AC6",
+  "desktop_pid": 8820,
+  "backend_pid": 29164,
+  "backend_port": 63872,
+  "health": {
+    "status": "ok",
+    "app": "PICORA-1D",
+    "version": "0.3.0",
+    "instance": "bac26705efa66b49",
+    "numba": true,
+    "solver": "1d3v PIC-MCC",
+    "gpu": false,
+    "execution": {
+      "available": true,
+      "backend": "numba",
+      "max_threads": 16,
+      "auto_threads": 4
+    }
+  },
+  "external_circuit_validation": true,
+  "external_circuit_nodes": 7,
+  "frontend": "<!doctype html>\n<html lang=\"ja\"><head><meta charset=\"UTF-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><title>PICORA-1D</title>  <script type=\"module\" crossorigin src=\"/assets/index-DTTmHd0P.js\"></script>\n  <link rel=\"stylesheet\" crossorigin href=\"/assets/index-D-HtYtck.css\">\n</head><body><div id=\"root\"></div></body></html>\n",
+  "note": "Undo/Redo修正を含む最終0.3.0のデスクトップ起動、バックエンド自動接続、全素子の回路検証を確認。検証用プロセスを終了。"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "picora-1d-ui",
+  "private": true,
+  "version": "0.3.1",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "2.11.1",
+    "@tauri-apps/plugin-dialog": "2.7.2",
+    "@tauri-apps/plugin-fs": "2.5.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "uplot": "1.6.32"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.11.4",
+    "@types/node": "26.6.3",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "typescript": "5.9.3",
+    "vite": "8.3.1",
+    "vitest": "5.0.2"
+  }
+}

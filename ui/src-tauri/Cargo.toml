@@ -1,0 +1,18 @@
+[package]
+name = "picora-1d"
+version = "0.3.1"
+description = "PICORA-1D: one-dimensional PIC-MCC plasma simulation"
+license = "GPL-3.0-or-later"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+
+[profile.release]
+strip = true
+lto = true

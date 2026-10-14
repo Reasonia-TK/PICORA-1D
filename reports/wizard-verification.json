@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-13",
+  "ui_tests": { "files_passed": 7, "tests_passed": 63 },
+  "typecheck": "passed",
+  "ui_build": "passed",
+  "desktop_build": "passed",
+  "installer_build": "passed",
+  "browser_checks": {
+    "default_direct_editor": "passed",
+    "invalid_cell_count_blocks_next": "passed",
+    "back_preserves_values": "passed",
+    "unfinished_numeric_input_survives_mode_switch": "passed",
+    "six_steps_in_order": "passed",
+    "circuit_editor_visible_at_electrode_step": "passed",
+    "wizard_runs_simulation_and_shows_results": "passed",
+    "restart_wizard_preserves_settings": "passed",
+    "mode_and_settings_survive_reload": "passed",
+    "light_theme_visual_check": "passed",
+    "dark_theme_visual_check": "passed"
+  },
+  "smoke_run": { "cells": 32, "macro_particles_per_species": 200, "steps": 50, "left_dc_v": 25, "cpu_threads": 2 },
+  "screenshots": ["wizard-light.png", "wizard-dark.png"]
+}

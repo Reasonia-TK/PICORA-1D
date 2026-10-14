@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-10-09T15:54:00.148209+00:00",
+  "original_backend": "C:\\Works\\20260928_ES-Sim\\backend",
+  "extracted_backend": "C:\\Works\\20261009_PICORA-1D\\backend",
+  "comparison": "bit exact; sequential mode; original result fields/live frames and particle state/RNG/continuation; added diagnostics and elapsed_s/timing excluded",
+  "passed": true,
+  "runtimes": {
+    "original": {
+      "core_path": "C:\\Works\\20260928_ES-Sim\\backend\\es_sim\\pic1d.py",
+      "numba_enabled": true,
+      "packages": {
+        "fastapi": "0.140.1",
+        "numba": "0.66.0",
+        "numpy": "2.4.6",
+        "pydantic": "2.13.4",
+        "scipy": "1.18.0"
+      },
+      "python": "3.13.15"
+    },
+    "extracted": {
+      "core_path": "C:\\Works\\20261009_PICORA-1D\\backend\\es_sim\\pic1d.py",
+      "numba_enabled": true,
+      "packages": {
+        "fastapi": "0.143.0",
+        "numba": "0.66.0",
+        "numpy": "2.4.6",
+        "pydantic": "2.14.0",
+        "scipy": "1.18.1"
+      },
+      "python": "3.13.15"
+    }
+  },
+  "dependency_check": {
+    "es_sim_modules": [
+      "es_sim",
+      "es_sim._numba_kernels",
+      "es_sim.circuit",
+      "es_sim.constants",
+      "es_sim.convergence",
+      "es_sim.external_circuit",
+      "es_sim.external_circuit_schema",
+      "es_sim.external_coax",
+      "es_sim.external_diode",
+      "es_sim.fn",
+      "es_sim.lxcat",
+      "es_sim.mcc",
+      "es_sim.parallel",
+      "es_sim.pic1d",
+      "es_sim.schema",
+      "es_sim.server",
+      "es_sim.voltage",
+      "es_sim.xs",
+      "es_sim.xs.convert",
+      "es_sim.xs.lxcat",
+      "es_sim.xs.masses",
+      "es_sim.xs.model"
+    ],
+    "forbidden_imports": []
+  },
+  "cases": {
+    "argon_rf": {
+      "passed": true,
+      "original_sha256": "d544e22a9b4677749ac2d4a43d6d80e021970a7fd90d523e41215e786f431d44",
+      "extracted_sha256": "d544e22a9b4677749ac2d4a43d6d80e021970a7fd90d523e41215e786f431d44",
+      "differences": [],
+      "continuation_original": [],
+      "continuation_extracted": [],
+      "activity_passed": true,
+      "activity": {
+        "electrons": 1035,
+        "fn_events": 0,
+        "ionization_events": 233,
+        "ions": 1278,
+        "see_weight": 0.0
+      }
+    },
+    "capacitor_see": {
+      "passed": true,
+      "original_sha256": "76ef4fb7cf148700a68d585f02974801d2fb3741fe4bb3d3adffe9da4185a191",
+      "extracted_sha256": "76ef4fb7cf148700a68d585f02974801d2fb3741fe4bb3d3adffe9da4185a191",
+      "differences": [],
+      "continuation_original": [],
+      "continuation_extracted": [],
+      "activity_passed": true,
+      "activity": {
+        "electrons": 1079,
+        "fn_events": 0,
+        "ionization_events": 397,
+        "ions": 1308,
+        "see_weight": 2225000000000.0
+      }
+    },
+    "dc": {
+      "passed": true,
+      "original_sha256": "bff7071c43111cc712d2bae7729b089dad5204d2d247973ae04120ec134c6032",
+      "extracted_sha256": "bff7071c43111cc712d2bae7729b089dad5204d2d247973ae04120ec134c6032",
+      "differences": [],
+      "continuation_original": [],
+      "continuation_extracted": [],
+      "activity_passed": true,
+      "activity": {
+        "electrons": 154,
+        "fn_events": 0,
+        "ionization_events": 0,
+        "ions": 256,
+        "see_weight": 0.0
+      }
+    },
+    "fn": {
+      "passed": true,
+      "original_sha256": "32177af889cce8479c7763f1b8c27563a55c83c12bb03dd361ec7d29478df198",
+      "extracted_sha256": "32177af889cce8479c7763f1b8c27563a55c83c12bb03dd361ec7d29478df198",
+      "differences": [],
+      "continuation_original": [],
+      "continuation_extracted": [],
+      "activity_passed": true,
+      "activity": {
+        "electrons": 49,
+        "fn_events": 47,
+        "ionization_events": 0,
+        "ions": 2,
+        "see_weight": 0.0
+      }
+    }
+  },
+  "elapsed_s": 9.378691900055856
+}

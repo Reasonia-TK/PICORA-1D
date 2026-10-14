@@ -1,0 +1,300 @@
+{
+  "environment": {
+    "available": true,
+    "backend": "numba",
+    "max_threads": 16,
+    "auto_threads": 4
+  },
+  "kernels": [
+    {
+      "particles_per_species": 5000,
+      "threads": 4,
+      "op": "deposit",
+      "sequential_s": 3.326750011183322e-05,
+      "parallel_s": 1.3199995737522841e-05,
+      "speedup": 2.5202659738188915
+    },
+    {
+      "particles_per_species": 5000,
+      "threads": 4,
+      "op": "push",
+      "sequential_s": 4.301000153645873e-05,
+      "parallel_s": 9.632500587031246e-06,
+      "speedup": 4.465092023390625
+    },
+    {
+      "particles_per_species": 5000,
+      "threads": 4,
+      "op": "moments",
+      "sequential_s": 0.00022951249848119916,
+      "parallel_s": 2.536250394769013e-05,
+      "speedup": 9.049283893836588
+    },
+    {
+      "particles_per_species": 5000,
+      "threads": 2,
+      "op": "deposit",
+      "sequential_s": 3.077500150538981e-05,
+      "parallel_s": 1.0292499791830777e-05,
+      "speedup": 2.9900414989384916
+    },
+    {
+      "particles_per_species": 5000,
+      "threads": 2,
+      "op": "push",
+      "sequential_s": 4.422250203788281e-05,
+      "parallel_s": 1.134999911300838e-05,
+      "speedup": 3.8962559906457463
+    },
+    {
+      "particles_per_species": 5000,
+      "threads": 2,
+      "op": "moments",
+      "sequential_s": 0.0002308475028257817,
+      "parallel_s": 2.9099994571879505e-05,
+      "speedup": 7.932905356926043
+    },
+    {
+      "particles_per_species": 5000,
+      "threads": 4,
+      "op": "deposit",
+      "sequential_s": 3.0887499451637265e-05,
+      "parallel_s": 1.2894999235868454e-05,
+      "speedup": 2.3953083584310155
+    },
+    {
+      "particles_per_species": 5000,
+      "threads": 4,
+      "op": "push",
+      "sequential_s": 4.0915003046393396e-05,
+      "parallel_s": 1.0595005005598068e-05,
+      "speedup": 3.861725692887846
+    },
+    {
+      "particles_per_species": 5000,
+      "threads": 4,
+      "op": "moments",
+      "sequential_s": 0.00022840999881736934,
+      "parallel_s": 2.601250307634473e-05,
+      "speedup": 8.7807773879739
+    },
+    {
+      "particles_per_species": 20000,
+      "threads": 4,
+      "op": "deposit",
+      "sequential_s": 8.802000083960593e-05,
+      "parallel_s": 2.0870001753792168e-05,
+      "speedup": 4.217536820456296
+    },
+    {
+      "particles_per_species": 20000,
+      "threads": 4,
+      "op": "push",
+      "sequential_s": 0.00011867249850183725,
+      "parallel_s": 2.4732499150559305e-05,
+      "speedup": 4.798241284854288
+    },
+    {
+      "particles_per_species": 20000,
+      "threads": 4,
+      "op": "moments",
+      "sequential_s": 0.0008115899981930852,
+      "parallel_s": 5.809750291518867e-05,
+      "speedup": 13.969447178785853
+    },
+    {
+      "particles_per_species": 20000,
+      "threads": 2,
+      "op": "deposit",
+      "sequential_s": 8.741249912418425e-05,
+      "parallel_s": 2.6540004182606935e-05,
+      "speedup": 3.293612861653966
+    },
+    {
+      "particles_per_species": 20000,
+      "threads": 2,
+      "op": "push",
+      "sequential_s": 0.00011922249686904251,
+      "parallel_s": 3.645499818958342e-05,
+      "speedup": 3.2704019418415147
+    },
+    {
+      "particles_per_species": 20000,
+      "threads": 2,
+      "op": "moments",
+      "sequential_s": 0.0009207749972119927,
+      "parallel_s": 7.997749489732086e-05,
+      "speedup": 11.512926209981071
+    },
+    {
+      "particles_per_species": 20000,
+      "threads": 4,
+      "op": "deposit",
+      "sequential_s": 8.737000171095133e-05,
+      "parallel_s": 2.1045003086328508e-05,
+      "speedup": 4.151579420185954
+    },
+    {
+      "particles_per_species": 20000,
+      "threads": 4,
+      "op": "push",
+      "sequential_s": 0.00011885500280186533,
+      "parallel_s": 2.4844997096806764e-05,
+      "speedup": 4.78386060335428
+    },
+    {
+      "particles_per_species": 20000,
+      "threads": 4,
+      "op": "moments",
+      "sequential_s": 0.0008135300013236701,
+      "parallel_s": 5.8425002498552205e-05,
+      "speedup": 13.92434688118036
+    },
+    {
+      "particles_per_species": 200000,
+      "threads": 4,
+      "op": "deposit",
+      "sequential_s": 0.003349360002903268,
+      "parallel_s": 0.00010145499836653472,
+      "speedup": 33.013257669205835
+    },
+    {
+      "particles_per_species": 200000,
+      "threads": 4,
+      "op": "push",
+      "sequential_s": 0.005938887502998114,
+      "parallel_s": 0.0009248725022189319,
+      "speedup": 6.421304005416615
+    },
+    {
+      "particles_per_species": 200000,
+      "threads": 4,
+      "op": "moments",
+      "sequential_s": 0.024929335003253072,
+      "parallel_s": 0.00035680499859154225,
+      "speedup": 69.86823363366412
+    },
+    {
+      "particles_per_species": 200000,
+      "threads": 2,
+      "op": "deposit",
+      "sequential_s": 0.0031101425003726034,
+      "parallel_s": 0.00018464000313542784,
+      "speedup": 16.844359009739662
+    },
+    {
+      "particles_per_species": 200000,
+      "threads": 2,
+      "op": "push",
+      "sequential_s": 0.005835232499521226,
+      "parallel_s": 0.000998697499744594,
+      "speedup": 5.842842803765428
+    },
+    {
+      "particles_per_species": 200000,
+      "threads": 2,
+      "op": "moments",
+      "sequential_s": 0.02570828750031069,
+      "parallel_s": 0.0010034175007604062,
+      "speedup": 25.62072864069894
+    },
+    {
+      "particles_per_species": 200000,
+      "threads": 4,
+      "op": "deposit",
+      "sequential_s": 0.003221372503321618,
+      "parallel_s": 0.0001733774959575385,
+      "speedup": 18.58010744433959
+    },
+    {
+      "particles_per_species": 200000,
+      "threads": 4,
+      "op": "push",
+      "sequential_s": 0.006214554997859523,
+      "parallel_s": 0.001040079997619614,
+      "speedup": 5.97507404438361
+    },
+    {
+      "particles_per_species": 200000,
+      "threads": 4,
+      "op": "moments",
+      "sequential_s": 0.026393602503230796,
+      "parallel_s": 0.0005362350028008222,
+      "speedup": 49.22021569903815
+    }
+  ],
+  "simulation": [
+    {
+      "particles_per_species": 5000,
+      "parallel": false,
+      "elapsed_s": 0.04177870019339025,
+      "timing": {
+        "deposit": 0.0070039997808635235,
+        "field": 0.0027137002907693386,
+        "push": 0.01390190003439784,
+        "mcc": 2.4098902940750122e-05,
+        "other": 0.016992401098832488
+      }
+    },
+    {
+      "particles_per_species": 5000,
+      "parallel": true,
+      "elapsed_s": 0.020020100055262446,
+      "timing": {
+        "deposit": 0.0033844979479908943,
+        "field": 0.0026122007984668016,
+        "push": 0.007450699806213379,
+        "mcc": 2.119992859661579e-05,
+        "other": 0.005473598605021834
+      }
+    },
+    {
+      "particles_per_species": 20000,
+      "parallel": false,
+      "elapsed_s": 0.12035480001941323,
+      "timing": {
+        "deposit": 0.01944819954223931,
+        "field": 0.0030851999763399363,
+        "push": 0.04813650017604232,
+        "mcc": 2.8098933398723602e-05,
+        "other": 0.04820210044272244
+      }
+    },
+    {
+      "particles_per_species": 20000,
+      "parallel": true,
+      "elapsed_s": 0.05625030002556741,
+      "timing": {
+        "deposit": 0.006816698936745524,
+        "field": 0.0034632007591426373,
+        "push": 0.03429839969612658,
+        "mcc": 2.689962275326252e-05,
+        "other": 0.01022430113516748
+      }
+    },
+    {
+      "particles_per_species": 200000,
+      "parallel": false,
+      "elapsed_s": 3.795604599872604,
+      "timing": {
+        "deposit": 0.7427329991478473,
+        "field": 0.022331700893118978,
+        "push": 1.4722981001250446,
+        "mcc": 0.0001514987088739872,
+        "other": 1.5547203002497554
+      }
+    },
+    {
+      "particles_per_species": 200000,
+      "parallel": true,
+      "elapsed_s": 0.5770024999510497,
+      "timing": {
+        "deposit": 0.07545309979468584,
+        "field": 0.007283599115908146,
+        "push": 0.39716869965195656,
+        "mcc": 6.779958494007587e-05,
+        "other": 0.09490480157546699
+      }
+    }
+  ]
+}

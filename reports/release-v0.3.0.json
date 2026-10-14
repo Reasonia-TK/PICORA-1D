@@ -1,0 +1,62 @@
+{
+  "version": "0.3.0",
+  "generated_at": "2026-10-09T16:14:55.8557232Z",
+  "passed": true,
+  "installer": {
+    "path": "C:\\Works\\20261009_PICORA-1D\\ui\\src-tauri\\target\\release\\bundle\\nsis\\PICORA-1D_0.3.0_x64-setup.exe",
+    "bytes": 74824604,
+    "sha256": "B0C1A4D3827B2ABAC60A296BB7AE58ACFDD6EEC7856B5501A78D27476F39EAC7"
+  },
+  "desktop": {
+    "path": "C:\\Works\\20261009_PICORA-1D\\ui\\src-tauri\\target\\release\\picora-1d.exe",
+    "sha256": "2F2A483C6C9BBCE4D162257936ABF378AA19765B767ED174E0832C2AFEEA6AC6",
+    "startup_passed": true
+  },
+  "validation": {
+    "backend_tests": 120,
+    "frontend_tests": 52,
+    "typecheck": true,
+    "frontend_build": true,
+    "bundle_smoke_report": "reports/bundle-smoke.json",
+    "ui_report": "reports/external-circuit-ui-validation.json",
+    "desktop_report": "reports/desktop-launch.json",
+    "original_pic_regression": "reports/extraction-regression.json"
+  },
+  "sources": [
+    {
+      "file": "external_circuit.py",
+      "sha256": "2E05658E2BD646DD26ADAC21B16184DD3C2742B0C925F86CDC742DFC0420E803",
+      "bundled_match": true
+    },
+    {
+      "file": "external_circuit_schema.py",
+      "sha256": "94527E26B4BB6E6E2E1B7D741650D1E5E4C2F7094A2E75BDE010005AD66F0F14",
+      "bundled_match": true
+    },
+    {
+      "file": "external_diode.py",
+      "sha256": "B9B85C87AC5B0B23241AE46A8C24EA76950E18ADD6CE44AAF761C224E5DB22AC",
+      "bundled_match": true
+    },
+    {
+      "file": "external_coax.py",
+      "sha256": "0BB58C3C3089F0602B9836EF804CBD55550F79936A8493AECCC0F6DE1ED0DE27",
+      "bundled_match": true
+    },
+    {
+      "file": "pic1d.py",
+      "sha256": "364512DFC57AA6623B89BCD0CD70F1D37FEF859D36F1CF7C99F413F19CDE6603",
+      "bundled_match": true
+    },
+    {
+      "file": "schema.py",
+      "sha256": "6896AE1DC32F45A43A3EF2DD9007960647F3C110DC8EEA9F6BCB90B2F7D74F5F",
+      "bundled_match": true
+    },
+    {
+      "file": "server.py",
+      "sha256": "0327B5930DE80ED42591AA81983A968267572349DADC4711B78DA11AE053E85C",
+      "bundled_match": true
+    }
+  ]
+}

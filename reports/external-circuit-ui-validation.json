@@ -1,0 +1,29 @@
+{
+  "version": "0.3.0",
+  "generated_at": "2026-10-09T16:12:43.8153103Z",
+  "passed": true,
+  "environment": "Codex in-app browser / 1280 x 720 / Vite + local API",
+  "manual_checks": [
+    "R/V/GNDをパレットから配置し、端子を選択して4本の配線を作成",
+    "入力途中の指数表記では実行を無効化し、電極面積を別欄で編集しても入力途中の値を保持",
+    "全素子の回路を読み込み、詳細ダイオードと同軸の編集項目を確認",
+    "全素子の回路で200ステップのPIC連成計算が完了",
+    "左電極の電圧と外部回路からの全電流を同時にプロット",
+    "ライト・ダークテーマの回路図と入力欄を確認",
+    "修正後のUndoで追加した抵抗が消え、Redoで復元",
+    "抵抗を50から123へ編集し、Undoで50・Redoで123を確認",
+    "複製した抵抗を削除し、Undoで復元"
+  ],
+  "console_errors": [],
+  "screenshots": [
+    "reports/ui-external-circuit-light.jpg",
+    "reports/ui-external-circuit-dark.jpg",
+    "reports/ui-external-circuit-results.jpg"
+  ],
+  "frontend_tests_passed": 52,
+  "backend_tests_passed": 120,
+  "source_hashes": {
+    "CircuitEditor": "20E4DB606D34819815F73147E0CC01C0B67792ACE1D33765C7691D0AC20220F1",
+    "App": "63CF84ADCC8222E0EEFF2AD3A401DE2D24075B87A6FF322B186DC243FC9E54DF"
+  }
+}

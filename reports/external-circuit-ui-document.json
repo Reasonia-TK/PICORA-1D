@@ -1,0 +1,307 @@
+{
+  "schema_version": 1,
+  "name": "回路連成の動作確認",
+  "components": [
+    {
+      "id": "pic",
+      "kind": "PIC",
+      "label": "PIC",
+      "ports": [
+        "left",
+        "right"
+      ],
+      "parameters": {},
+      "position": {
+        "x": 770.0,
+        "y": 360.0
+      },
+      "rotation": 0
+    },
+    {
+      "id": "v1",
+      "kind": "V",
+      "label": "V1",
+      "ports": [
+        "p",
+        "n"
+      ],
+      "parameters": {
+        "dc_v": 0.0,
+        "waveform": {
+          "kind": "sin",
+          "amplitude_v": 10.0,
+          "frequency_hz": 13560000.0,
+          "offset_v": 0.0,
+          "phase_deg": 0.0,
+          "delay_s": 0.0
+        }
+      },
+      "position": {
+        "x": 100.0,
+        "y": 240.0
+      },
+      "rotation": 90
+    },
+    {
+      "id": "s1",
+      "kind": "S",
+      "label": "S1",
+      "ports": [
+        "p",
+        "n"
+      ],
+      "parameters": {
+        "on_resistance_ohm": 1.0,
+        "off_resistance_ohm": 100000000.0,
+        "on_time_s": 0.0,
+        "initial_state": false,
+        "duty": 0.5
+      },
+      "position": {
+        "x": 260.0,
+        "y": 120.0
+      },
+      "rotation": 0
+    },
+    {
+      "id": "r1",
+      "kind": "R",
+      "label": "R1",
+      "ports": [
+        "p",
+        "n"
+      ],
+      "parameters": {
+        "value": 50.0
+      },
+      "position": {
+        "x": 440.0,
+        "y": 120.0
+      },
+      "rotation": 0
+    },
+    {
+      "id": "l1",
+      "kind": "L",
+      "label": "L1",
+      "ports": [
+        "p",
+        "n"
+      ],
+      "parameters": {
+        "value": 1e-07,
+        "initial_current_a": null
+      },
+      "position": {
+        "x": 620.0,
+        "y": 120.0
+      },
+      "rotation": 0
+    },
+    {
+      "id": "cx1",
+      "kind": "COAX_GND",
+      "label": "CX1",
+      "ports": [
+        "p1",
+        "p2"
+      ],
+      "parameters": {
+        "inner_diameter_m": 0.001,
+        "shield_inner_diameter_m": 0.00335,
+        "length_m": 0.1,
+        "relative_permittivity": 2.1,
+        "relative_permeability": 1.0,
+        "loss_tangent": 0.0002,
+        "inner_resistivity_ohm_m": 1.724e-08,
+        "shield_resistivity_ohm_m": 1.724e-08,
+        "shield_thickness_m": 0.00015,
+        "reference_frequency_hz": 40000000.0,
+        "segments": 2
+      },
+      "position": {
+        "x": 800.0,
+        "y": 120.0
+      },
+      "rotation": 0
+    },
+    {
+      "id": "c1",
+      "kind": "C",
+      "label": "C1",
+      "ports": [
+        "p",
+        "n"
+      ],
+      "parameters": {
+        "value": 1e-09,
+        "initial_voltage_v": null
+      },
+      "position": {
+        "x": 970.0,
+        "y": 120.0
+      },
+      "rotation": 0
+    },
+    {
+      "id": "d1",
+      "kind": "D",
+      "label": "D1",
+      "ports": [
+        "p",
+        "n"
+      ],
+      "parameters": {
+        "area": 1.0,
+        "temperature_k": null,
+        "model_parameters": {
+          "IS": 1e-14,
+          "N": 1.5,
+          "RS": 1.0,
+          "IBV": 0.001,
+          "CJO": 1e-12,
+          "VJ": 1.0,
+          "M": 0.5,
+          "TT": 1e-09,
+          "EG": 1.11,
+          "XTI": 3.0,
+          "FC": 0.5,
+          "TNOM": 27.0,
+          "BV": 100.0
+        }
+      },
+      "position": {
+        "x": 520.0,
+        "y": 360.0
+      },
+      "rotation": 90
+    },
+    {
+      "id": "g1",
+      "kind": "GND",
+      "label": "G1",
+      "ports": [
+        "g"
+      ],
+      "parameters": {},
+      "position": {
+        "x": 260.0,
+        "y": 520.0
+      },
+      "rotation": 0
+    }
+  ],
+  "wires": [
+    {
+      "id": "w0",
+      "source": {
+        "component_id": "v1",
+        "port": "p"
+      },
+      "target": {
+        "component_id": "s1",
+        "port": "p"
+      }
+    },
+    {
+      "id": "w1",
+      "source": {
+        "component_id": "s1",
+        "port": "n"
+      },
+      "target": {
+        "component_id": "r1",
+        "port": "p"
+      }
+    },
+    {
+      "id": "w2",
+      "source": {
+        "component_id": "r1",
+        "port": "n"
+      },
+      "target": {
+        "component_id": "l1",
+        "port": "p"
+      }
+    },
+    {
+      "id": "w3",
+      "source": {
+        "component_id": "l1",
+        "port": "n"
+      },
+      "target": {
+        "component_id": "cx1",
+        "port": "p1"
+      }
+    },
+    {
+      "id": "w4",
+      "source": {
+        "component_id": "cx1",
+        "port": "p2"
+      },
+      "target": {
+        "component_id": "c1",
+        "port": "p"
+      }
+    },
+    {
+      "id": "w5",
+      "source": {
+        "component_id": "c1",
+        "port": "n"
+      },
+      "target": {
+        "component_id": "pic",
+        "port": "left"
+      }
+    },
+    {
+      "id": "w6",
+      "source": {
+        "component_id": "pic",
+        "port": "left"
+      },
+      "target": {
+        "component_id": "d1",
+        "port": "p"
+      }
+    },
+    {
+      "id": "w7",
+      "source": {
+        "component_id": "pic",
+        "port": "right"
+      },
+      "target": {
+        "component_id": "g1",
+        "port": "g"
+      }
+    },
+    {
+      "id": "w8",
+      "source": {
+        "component_id": "v1",
+        "port": "n"
+      },
+      "target": {
+        "component_id": "g1",
+        "port": "g"
+      }
+    },
+    {
+      "id": "w9",
+      "source": {
+        "component_id": "d1",
+        "port": "n"
+      },
+      "target": {
+        "component_id": "g1",
+        "port": "g"
+      }
+    }
+  ],
+  "node_labels": []
+}

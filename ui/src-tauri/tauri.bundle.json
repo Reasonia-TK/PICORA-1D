@@ -1,0 +1,13 @@
+{
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "resources": {
+      "../../backend/dist/picora-backend/": "backend/",
+      "../../LICENSE": "LICENSE",
+      "target/licenses/THIRD_PARTY_NOTICES.txt": "THIRD_PARTY_NOTICES.txt",
+      "target/licenses/": "licenses/"
+    },
+    "windows": { "nsis": { "installMode": "currentUser", "languages": ["Japanese", "English"], "displayLanguageSelector": false } }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-10-09T15:57:21.916796+00:00",
+  "app_version": "0.3.0",
+  "case": "all_components_circuit: coax segments=32; 1d3v PIC",
+  "runtime": {
+    "python": "3.13.15",
+    "execution": {
+      "requested_parallel": true,
+      "enabled": true,
+      "threads": 4,
+      "max_threads": 16,
+      "backend": "numba",
+      "parallel_min_particles": 4096,
+      "fallback_reason": null
+    }
+  },
+  "settings": {
+    "gap_m": 0.02,
+    "n_cells": 16,
+    "init_density_m3": 1000000000000.0,
+    "n_macro_per_species": 50,
+    "dt_s": 1e-10,
+    "n_steps": 1000,
+    "frame_every": 20,
+    "avg_steps": 250,
+    "coax_segments": 32,
+    "coax_length_m": 0.1,
+    "convergence": false
+  },
+  "elapsed_s": 2.2221916001290083,
+  "initialization_s": 0.1006532998289913,
+  "result_build_s": 0.1817755000665784,
+  "frame_serialization_s": 0.1350296998862177,
+  "result_serialization_s": 0.43612720002420247,
+  "wall_elapsed_s": 2.941104399971664,
+  "result_json_bytes": 23898344,
+  "external_catalog_size": 1180,
+  "external_parameters_size": 70,
+  "external_history_points": 1000,
+  "frame_count": 50,
+  "frame_json_bytes": {
+    "first": 469621,
+    "last": 450572,
+    "max": 469621
+  },
+  "pic_timing_s": {
+    "deposit": 0.010496303671970963,
+    "field": 1.9542291946709156,
+    "push": 0.027279298985376954,
+    "mcc": 0.0003350027836859226,
+    "other": 0.05206590564921498
+  },
+  "steps_completed": 1000,
+  "warnings": [],
+  "notes": [
+    "Initialization includes loading/JIT of available particle kernels; elapsed_s measures run_batch after initialization.",
+    "Run includes actual all-quantity calculation, sampling and frame serialization in callback.",
+    "Compact UTF-8 JSON sizes measured with ensure_ascii=False, allow_nan=False.",
+    "Single measured run; CPU load and environment can affect timing.",
+    "This is a performance case, not a time/space convergence validation of the TEM line.",
+    "Remeasured after nullable explicit C/L initial-condition solver update; hashes identify measured sources."
+  ],
+  "source_sha256": {
+    "pic1d": "364512dfc57aa6623b89bcd0cd70f1d37fef859d36f1cf7c99f413f19cde6603",
+    "external_circuit": "135fad92908aabf7f3a2575d28ccb13141bae9d48055a3cc49c00ed0f66f9646",
+    "external_circuit_schema": "94527e26b4bb6e6e2e1b7d741650d1e5e4c2f7094a2e75bde010005ad66f0f14",
+    "external_coax": "0bb58c3c3089f0602b9836ef804cbd55550f79936a8493aeccc0f6de1ed0de27",
+    "external_diode": "b9b85c87ac5b0b23241ae46a8c24ea76950e18add6ce44aaf761c224e5db22ac"
+  }
+}

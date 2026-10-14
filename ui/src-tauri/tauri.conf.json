@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "PICORA-1D",
+  "version": "0.3.1",
+  "identifier": "com.tk.picora-1d",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1425",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [{ "label": "main", "title": "PICORA-1D", "width": 1480, "height": 940, "minWidth": 980, "minHeight": 640 }],
+    "security": { "csp": null }
+  },
+  "bundle": {
+    "active": false,
+    "targets": ["nsis"],
+    "icon": ["icons/icon.png", "icons/icon.ico"]
+  }
+}

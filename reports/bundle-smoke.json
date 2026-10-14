@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "executable": "C:\\Works\\20261009_PICORA-1D\\backend\\dist\\picora-backend\\picora-backend.exe",
+  "health": {
+    "status": "ok",
+    "app": "PICORA-1D",
+    "version": "0.3.1",
+    "instance": "14e5898b0cded009",
+    "numba": true,
+    "solver": "1d3v PIC-MCC",
+    "gpu": false,
+    "execution": {
+      "available": true,
+      "backend": "numba",
+      "max_threads": 16,
+      "auto_threads": 4
+    }
+  },
+  "events": [
+    "started",
+    "frame",
+    "frame",
+    "frame",
+    "frame",
+    "frame",
+    "frame",
+    "frame",
+    "frame",
+    "frame",
+    "done"
+  ],
+  "continue_events": [
+    "started",
+    "frame",
+    "frame",
+    "frame",
+    "frame",
+    "frame",
+    "frame",
+    "frame",
+    "frame",
+    "done"
+  ],
+  "result_keys": [
+    "circuit",
+    "convergence",
+    "cycle",
+    "diagnostics",
+    "eedf",
+    "elapsed_s",
+    "execution",
+    "external_circuit",
+    "fn",
+    "history",
+    "profiles",
+    "settings",
+    "sheath",
+    "sheath_fft",
+    "sheath_ts",
+    "timing",
+    "wall_iedf",
+    "walls"
+  ],
+  "execution": {
+    "requested_parallel": true,
+    "enabled": true,
+    "threads": 2,
+    "max_threads": 16,
+    "backend": "numba",
+    "parallel_min_particles": 4096,
+    "fallback_reason": null
+  },
+  "diagnostic_catalog_entries": 124,
+  "physical_parameters": 43,
+  "continued_step": 400,
+  "stop_step": 1,
+  "external_circuit": {
+    "events": [
+      "started",
+      "frame",
+      "frame",
+      "frame",
+      "done"
+    ],
+    "catalog_entries": 160,
+    "method": "backward_euler_mna",
+    "continued_step": 40
+  }
+}
